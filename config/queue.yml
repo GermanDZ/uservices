@@ -1,0 +1,15 @@
+default: &default
+  config_name: amqp_config
+  host: <%= ENV['AMQP_HOST'] || 'localhost' %>
+  port: <%= ENV['AMQP_PORT'] || '5672' %>
+  user: <%= ENV['AMQP_USER'] || 'admin' %>
+  password: <%= ENV['AMQP_PASS'] || 'mypass'%>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
