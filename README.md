@@ -11,4 +11,4 @@ Launch a rabbitmq server with:
 
 # Launch the microservice
 
-  docker run -ti --rm -e AMQP_HOST=172.17.42.1 -e AMQP_PORT=12345 germandz/uservices magic_strings
+  docker run -ti --rm -e AMQP_HOST=172.17.42.1 -e AMQP_PORT=12345 germandz/uservices-demo:latest magic_strings
